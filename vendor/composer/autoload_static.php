@@ -109,6 +109,11 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
             'Laravel\\Socialite\\' => 18,
             'Laravel\\' => 8,
         ),
+        'J' => 
+        array (
+            'Jenssegers\\Agent\\' => 17,
+            'Jaybizzle\\CrawlerDetect\\' => 24,
+        ),
         'I' => 
         array (
             'Intervention\\Image\\' => 19,
@@ -351,6 +356,14 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         array (
             0 => __DIR__ . '/..' . '/anahkiasen/former/src/Laravel',
         ),
+        'Jenssegers\\Agent\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/agent/src',
+        ),
+        'Jaybizzle\\CrawlerDetect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src',
+        ),
         'Intervention\\Image\\' => 
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
@@ -498,6 +511,10 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
             array (
                 0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
             ),
+            'Detection' => 
+            array (
+                0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+            ),
         ),
     );
 
@@ -544,6 +561,7 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'App\\Http\\Controllers\\Admin\\BannerResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/BannerResourceController.php',
         'App\\Http\\Controllers\\Admin\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Controller.php',
         'App\\Http\\Controllers\\Admin\\CourseResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CourseResourceController.php',
+        'App\\Http\\Controllers\\Admin\\HomeResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/HomeResourceController.php',
         'App\\Http\\Controllers\\Admin\\KnowledgeCategoryResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/KnowledgeCategoryResourceController.php',
         'App\\Http\\Controllers\\Admin\\KnowledgeResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/KnowledgeResourceController.php',
         'App\\Http\\Controllers\\Admin\\LinkResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/LinkResourceController.php',
@@ -563,6 +581,7 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'App\\Http\\Controllers\\Admin\\PermissionResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PermissionResourceController.php',
         'App\\Http\\Controllers\\Admin\\ProductCategoryResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductCategoryResourceController.php',
         'App\\Http\\Controllers\\Admin\\ProductResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductResourceController.php',
+        'App\\Http\\Controllers\\Admin\\QuestionResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/QuestionResourceController.php',
         'App\\Http\\Controllers\\Admin\\ResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ResourceController.php',
         'App\\Http\\Controllers\\Admin\\RoleResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/RoleResourceController.php',
         'App\\Http\\Controllers\\Admin\\SettingResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SettingResourceController.php',
@@ -598,7 +617,14 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'App\\Http\\Controllers\\Pc\\KnowledgeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Pc/KnowledgeController.php',
         'App\\Http\\Controllers\\Pc\\PageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Pc/PageController.php',
         'App\\Http\\Controllers\\Pc\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Pc/ProductController.php',
+        'App\\Http\\Controllers\\Wap\\BaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/BaseController.php',
+        'App\\Http\\Controllers\\Wap\\CaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/CaseController.php',
+        'App\\Http\\Controllers\\Wap\\CompanyController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/CompanyController.php',
+        'App\\Http\\Controllers\\Wap\\HealthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/HealthController.php',
         'App\\Http\\Controllers\\Wap\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/HomeController.php',
+        'App\\Http\\Controllers\\Wap\\KnowledgeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/KnowledgeController.php',
+        'App\\Http\\Controllers\\Wap\\PageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/PageController.php',
+        'App\\Http\\Controllers\\Wap\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Wap/ProductController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EnableCrossRequestMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/EnableCrossRequestMiddleware.php',
@@ -641,6 +667,7 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'App\\Models\\Permission' => __DIR__ . '/../..' . '/app/Models/Permission.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\ProductCategory' => __DIR__ . '/../..' . '/app/Models/ProductCategory.php',
+        'App\\Models\\Question' => __DIR__ . '/../..' . '/app/Models/Question.php',
         'App\\Models\\Role' => __DIR__ . '/../..' . '/app/Models/Role.php',
         'App\\Models\\Setting' => __DIR__ . '/../..' . '/app/Models/Setting.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
@@ -696,6 +723,8 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'App\\Repositories\\Eloquent\\ProductCategoryRepositoryInterface' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/ProductCategoryRepositoryInterface.php',
         'App\\Repositories\\Eloquent\\ProductRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/ProductRepository.php',
         'App\\Repositories\\Eloquent\\ProductRepositoryInterface' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/ProductRepositoryInterface.php',
+        'App\\Repositories\\Eloquent\\QuestionRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/QuestionRepository.php',
+        'App\\Repositories\\Eloquent\\QuestionRepositoryInterface' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/QuestionRepositoryInterface.php',
         'App\\Repositories\\Eloquent\\RoleRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/RoleRepository.php',
         'App\\Repositories\\Eloquent\\RoleRepositoryInterface' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/RoleRepositoryInterface.php',
         'App\\Repositories\\Eloquent\\SettingRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/SettingRepository.php',
@@ -739,6 +768,8 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'App\\Repositories\\Presenter\\PermissionPresenter' => __DIR__ . '/../..' . '/app/Repositories/Presenter/PermissionPresenter.php',
         'App\\Repositories\\Presenter\\ProductListPresenter' => __DIR__ . '/../..' . '/app/Repositories/Presenter/ProductListPresenter.php',
         'App\\Repositories\\Presenter\\ProductListTransformer' => __DIR__ . '/../..' . '/app/Repositories/Presenter/ProductListTransformer.php',
+        'App\\Repositories\\Presenter\\QuestionListPresenter' => __DIR__ . '/../..' . '/app/Repositories/Presenter/QuestionListPresenter.php',
+        'App\\Repositories\\Presenter\\QuestionListTransformer' => __DIR__ . '/../..' . '/app/Repositories/Presenter/QuestionListTransformer.php',
         'App\\Repositories\\Presenter\\RoleListPresenter' => __DIR__ . '/../..' . '/app/Repositories/Presenter/RoleListPresenter.php',
         'App\\Repositories\\Presenter\\RoleListTransformer' => __DIR__ . '/../..' . '/app/Repositories/Presenter/RoleListTransformer.php',
         'App\\Repositories\\Transformers\\PermissionTransformer' => __DIR__ . '/../..' . '/app/Repositories/Presenter/PermissionTransformer.php',
@@ -827,6 +858,7 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+        'Detection\\MobileDetect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced/Detection/MobileDetect.php',
         'Dingo\\Api\\Auth\\Auth' => __DIR__ . '/..' . '/dingo/api/src/Auth/Auth.php',
         'Dingo\\Api\\Auth\\Provider\\Authorization' => __DIR__ . '/..' . '/dingo/api/src/Auth/Provider/Authorization.php',
         'Dingo\\Api\\Auth\\Provider\\Basic' => __DIR__ . '/..' . '/dingo/api/src/Auth/Provider/Basic.php',
@@ -2602,6 +2634,14 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+        'Jaybizzle\\CrawlerDetect\\CrawlerDetect' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/CrawlerDetect.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\AbstractProvider' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/AbstractProvider.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Crawlers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Crawlers.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Exclusions' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Exclusions.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Headers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Headers.php',
+        'Jenssegers\\Agent\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Agent.php',
+        'Jenssegers\\Agent\\AgentServiceProvider' => __DIR__ . '/..' . '/jenssegers/agent/src/AgentServiceProvider.php',
+        'Jenssegers\\Agent\\Facades\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Facades/Agent.php',
         'Laravel\\File' => __DIR__ . '/..' . '/anahkiasen/former/src/Laravel/File.php',
         'Laravel\\Socialite\\AbstractUser' => __DIR__ . '/..' . '/laravel/socialite/src/AbstractUser.php',
         'Laravel\\Socialite\\Contracts\\Factory' => __DIR__ . '/..' . '/laravel/socialite/src/Contracts/Factory.php',
@@ -2761,6 +2801,7 @@ class ComposerStaticInit6556a1907710c0608e1992f4a2f964ec
         'Mcamara\\LaravelLocalization\\Middleware\\LocaleCookieRedirect' => __DIR__ . '/..' . '/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleCookieRedirect.php',
         'Mcamara\\LaravelLocalization\\Middleware\\LocaleSessionRedirect' => __DIR__ . '/..' . '/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php',
         'MenuTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MenuTableSeeder.php',
+        'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryTestCase' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php',
