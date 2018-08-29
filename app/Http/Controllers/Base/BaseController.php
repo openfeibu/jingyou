@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Base;
 
-use Route;
+//use App\Http\Requests\Request;
+use Route,Agent,URL,Redirect;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Dingo\Api\Routing\Helpers;
 use Illuminate\Support\Facades\Hash;
@@ -17,6 +19,14 @@ class BaseController extends Controller
 
     public function __construct()
     {
+        if(Agent::isMobile() && $_SERVER['HTTP_HOST'] != env('WAP_URL'))
+        {
+            header("location:".str_replace_first($_SERVER['HTTP_HOST'],env('WAP_URL'),URL::current()));
+        }
+        if(!Agent::isMobile() && $_SERVER['HTTP_HOST'] == env('WAP_URL'))
+        {
+            header("location:".str_replace_first($_SERVER['HTTP_HOST'],env('PC_URL'),URL::current()));
+        }
         $this->response = app(ResourceResponse::class);
         // 根据路由分组命名决定调用视图模板
         $route = Route::currentRouteName();
