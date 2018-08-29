@@ -145,11 +145,32 @@ Route::group(
    // Route::resource('submenu', 'SubMenuResourceController');
 });
 */
-
+Route::group([
+    'namespace' => 'Wap',
+    'as' => 'wap.',
+    'domain' => env('WAP_URL'),
+], function () {
+    Route::get('/','HomeController@home')->name('home');
+    Route::get('product','ProductController@home')->name('product.home');
+    Route::get('product/category/{slug}','ProductController@category')->name('product.category');
+    Route::get('product/{product}','ProductController@productShow')->name('product.show');
+    Route::get('case','CaseController@home')->name('case.home');
+    Route::get('case/{case}','CaseController@show')->name('case.show');
+    Route::get('page/{slug}','PageController@show')->name('page.show');
+    Route::get('health','HealthController@show')->name('health');
+    Route::get('knowledge','KnowledgeController@home')->name('knowledge.home');
+    Route::get('knowledge/{knowledge}','KnowledgeController@show')->name('knowledge.show');
+    Route::get('company','CompanyController@about')->name('company.about');
+    Route::get('company/qualification','CompanyController@qualification')->name('company.qualification');
+    Route::get('company/news','CompanyController@news')->name('company.news');
+    Route::get('company/news/{news}','CompanyController@newsShow')->name('company.news.show');
+    Route::get('company/news','CompanyController@news')->name('company.news');
+    Route::get('company/contact','CompanyController@contact')->name('company.contact');
+    Route::post('company/questionStore','CompanyController@questionStore')->name('company.question.store');
+});
 Route::group([
     'namespace' => 'Pc',
     'as' => 'pc.',
-    'domain' => 'jingyou.com',
 ], function () {
     Route::get('/','HomeController@home')->name('home');
     Route::get('product','ProductController@home')->name('product.home');
@@ -171,27 +192,4 @@ Route::group([
     /*
     Route::get('/product/products', 'ProductController@products');
     */
-});
-Route::group([
-    'namespace' => 'Wap',
-    'as' => 'wap.',
-    'domain' => 'm.jingyou.com',
-], function () {
-    Route::get('/','HomeController@home')->name('home');
-    Route::get('product','ProductController@home')->name('product.home');
-    Route::get('product/category/{slug}','ProductController@category')->name('product.category');
-    Route::get('product/{product}','ProductController@productShow')->name('product.show');
-    Route::get('case','CaseController@home')->name('case.home');
-    Route::get('case/{case}','CaseController@show')->name('case.show');
-    Route::get('page/{slug}','PageController@show')->name('page.show');
-    Route::get('health','HealthController@show')->name('health');
-    Route::get('knowledge','KnowledgeController@home')->name('knowledge.home');
-    Route::get('knowledge/{knowledge}','KnowledgeController@show')->name('knowledge.show');
-    Route::get('company','CompanyController@about')->name('company.about');
-    Route::get('company/qualification','CompanyController@qualification')->name('company.qualification');
-    Route::get('company/news','CompanyController@news')->name('company.news');
-    Route::get('company/news/{news}','CompanyController@newsShow')->name('company.news.show');
-    Route::get('company/news','CompanyController@news')->name('company.news');
-    Route::get('company/contact','CompanyController@contact')->name('company.contact');
-    Route::post('company/questionStore','CompanyController@questionStore')->name('company.question.store');
 });
