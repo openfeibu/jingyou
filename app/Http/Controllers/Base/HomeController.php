@@ -16,7 +16,7 @@ class HomeController extends BaseController
     public function home(Request $request)
     {
 
-        return $this->response->title(setting('station_name'))
+        return $this->response->title('')
             ->view('home', true)
             ->output();
     }
