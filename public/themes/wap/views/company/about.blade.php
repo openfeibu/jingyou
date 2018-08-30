@@ -10,6 +10,7 @@
         </div>
     </div>
     <div class="about">
+        <!--
         <div class="about-introduce">
             <div class="about-introduce-video fb-float-left">
                 <div class="video">
@@ -20,7 +21,9 @@
             <div class="about-introduce-test">
                 {!! $about['content'] !!}
             </div>
+
         </div>
+        -->
         <div class="about-his">
             <div class="about-title">
                 <p>发展历程</p>
