@@ -23,8 +23,8 @@
         <span></span>
         <span></span>
     </div>
-    <nav>
-        {!! Theme::widget('nav')->render() !!}
 
-    </nav>
 </div>
+<nav>
+    {!! Theme::widget('nav')->render() !!}
+</nav>
