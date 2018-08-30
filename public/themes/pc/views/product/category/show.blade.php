@@ -8,7 +8,7 @@
         <div class="w1200 fb-clearfix">
             <p>{{ $category['name'] }}</p>
             <div class="goodList-search ">
-                <form action="" method="get">
+                <form action="{{ url('/product/category/'.$category['slug']) }}" method="get">
                     <input type="text" name="search" class="fb-inlineBlock" placeholder="输入要搜索的关键词" value="{{ $search }}"/>
                     <input type="submit" class="fb-inlineBlock" value="搜索">
                 </form>
