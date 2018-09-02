@@ -6,6 +6,8 @@ Route::group([
     'prefix' => set_route_guard('web',null,'admin')
 ], function () {
     Auth::routes();
+    Route::get('password', 'UserController@getPassword');
+    Route::post('password', 'UserController@postPassword');
     Route::get('/', 'ResourceController@home')->name('home');
     Route::get('/dashboard', 'ResourceController@dashboard')->name('dashboard');
     Route::resource('banner', 'BannerResourceController');
