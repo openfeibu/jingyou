@@ -3,29 +3,29 @@
 namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Admin\Controller;
-use Illuminate\Foundation\Auth\ResetsPasswords;
+use App\Traits\AdminUser\RoutesAndGuards;
+use App\Traits\AdminUser\Auth\AuthenticatesUsers;
+use App\Traits\Theme\ThemeAndViews;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use App\Http\Response\Auth\Response as AuthResponse;
 
 class ResetPasswordController extends Controller
 {
+
+
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Controller
+    | Login Controller
     |--------------------------------------------------------------------------
     |
-    | This controller is responsible for handling password reset requests
-    | and uses a simple trait to include this behavior. You're free to
-    | explore this trait and override any methods you wish to tweak.
+    | This controller handles authenticating users for the application and
+    | redirecting them to your home screen. The controller uses a trait
+    | to conveniently provide its functionality to your applications.
     |
-    */
-
-    use ResetsPasswords;
-
-    /**
-     * Where to redirect users after resetting their password.
-     *
-     * @var string
      */
-    protected $redirectTo = '/home';
+
+    use RoutesAndGuards, ThemeAndViews, ValidatesRequests, AuthenticatesUsers;
+
 
     /**
      * Create a new controller instance.
@@ -34,6 +34,9 @@ class ResetPasswordController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->response   = resolve(AuthResponse::class);
+        $this->setRedirectTo();
+        $this->middleware('guest:' . $this->getGuard(), ['except' => ['logout', 'verify', 'locked', 'sendVerification']]);
+        $this->setTheme();
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Route;
+use Route,Redirect;
 use App\Http\Controllers\Admin\Controller as BaseController;
 use App\Traits\AdminUser\AdminUserPages;
 use App\Http\Response\ResourceResponse;
@@ -31,6 +31,7 @@ class ResourceController extends BaseController
      */
     public function home()
     {
+        return Redirect::to('/admin/banner');
         return $this->response->title(trans('app.admin.panel'))
             ->view('home')
             ->output();
