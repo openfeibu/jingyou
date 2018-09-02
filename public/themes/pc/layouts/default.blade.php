@@ -20,6 +20,7 @@
     <title>
         {{ setting('station_name') }} {!! Theme::getTitle() !!}
     </title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     {!! Theme::asset()->styles() !!}
     <script src='{{ asset('js/jquery-1.7.2.min.js') }}'></script>
     <!--[if lt IE 9]>

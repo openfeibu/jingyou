@@ -16,9 +16,11 @@
     <meta content="app" name="x5-page-mode"/>
     <!-- UC禁止放大字体 -->
     <meta content="no" name="wap-font-scale"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>
         {{ setting('station_name') }} {!! Theme::getTitle() !!}
     </title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     {!! Theme::asset()->styles() !!}
     <script src='{{ asset('js/jquery-1.7.2.min.js') }}'></script>
     <!--[if lt IE 9]>
