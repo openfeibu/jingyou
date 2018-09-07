@@ -39,7 +39,7 @@ class PageRepository extends BaseRepository implements PageRepositoryInterface
     }
     public function getPages($category_id,$number=10,$order='desc')
     {
-        return $this->where(['category_id' => $category_id])->orderBy('order','asc')->orderBy('id',$order)->take(10)->all();
+        return $this->where(['category_id' => $category_id])->orderBy('order','asc')->orderBy('id',$order)->take($number)->all();
     }
     public function getAllPages($category_id,$order='desc')
     {
